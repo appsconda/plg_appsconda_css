@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" group="system" method="upgrade">
-	<name>plg_system_appscondacss</name>
+	<name>System - AppsConda CSS</name>
 	<author>appsconda.com</author>
 	<creationDate>30 September 2023</creationDate>
 	<copyright>Copyright (C) 2018 AppsConda ApS. All Rights Reserved.</copyright>

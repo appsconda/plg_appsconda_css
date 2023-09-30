@@ -10,13 +10,12 @@
 
 defined('_JEXEC') or die('No direct access');
 
-jimport('joomla.plugin.plugin');
-
 use Joomla\CMS\Factory;
+use Joomla\CMS\Plugin\CMSPlugin;
 
 
 
-class plgSystemAppscondacss extends JPlugin{
+class plgSystemAppscondacss extends CMSPlugin{
 	function onBeforeCompileHead() {
 
 		$doc = Factory::getDocument();

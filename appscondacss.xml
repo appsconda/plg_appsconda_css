@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="plugin" group="system" method="upgrade">
-	<name>AppsConda CSS</name>
+	<name>plg_system_appscondacss</name>
 	<author>appsconda.com</author>
 	<creationDate>30 September 2023</creationDate>
 	<copyright>Copyright (C) 2018 AppsConda ApS. All Rights Reserved.</copyright>
 	<license>GNU General Public License version 2 or later;</license>
 	<authorEmail>support@appsconda.com</authorEmail>
 	<authorUrl>https://appsconda.com/</authorUrl>
-	<version>1.0</version>
+	<version>1.0.0</version>
 	<description>Any CSS code entered in this plugin affects the styling of only the mobile apps created through AppsConda. This doesn't affect the styling of the Joomla website itself.</description>
 	<files>
 		<filename plugin="appscondacss">appscondacss.php</filename>
@@ -31,4 +31,7 @@
 			</fieldset>
 		</fields>
 	</config>
+	<updateservers>	
+		<server type="extension" priority="1" name="AppsConda Extension">https://appsconda.com/updates/appsconda.xml</server>
+	</updateservers>
 </extension>

@@ -23,13 +23,16 @@ class plgSystemAppscondacss extends JPlugin{
 		$app = Factory::getApplication();
 		$is_site = $app->getName() === 'site';
 		
-		if ($is_site) {
-		    
-			$appscondacss = $this->params->get('appscondacss');
-				if (strlen($appscondacss) > 0) {
-				$doc->addCustomTag('<style type="text/css">'.$appscondacss.'</style>');
-				}
+		$userAgent = $_SERVER['HTTP_USER_AGENT'];
+		if (strpos($userAgent, 'appsconda') !== false) {
+		    if ($is_site) {
+		        $appscondacss = $this->params->get('appscondacss');
+		        if (strlen($appscondacss) > 0) {
+		            $doc->addCustomTag('<style type="text/css">' . $appscondacss . '</style>');
+		        }
+		    }
 		}
+
 
 		
 

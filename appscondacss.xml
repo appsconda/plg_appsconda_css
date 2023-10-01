@@ -32,6 +32,6 @@
 		</fields>
 	</config>
 	<updateservers>	
-		<server type="extension" priority="1" name="AppsConda Extension">https://appsconda.com/updates/appsconda.xml</server>
+		<server type="extension" priority="1" name="System - AppsConda CSS">https://appsconda.com/updates/appsconda.xml</server>
 	</updateservers>
 </extension>
